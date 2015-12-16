@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="container" style="padding-top:20px;">
+        <div class="row">
+          <div class="col-md-6 markdown-render">
+            <h1>{{ page.title }}</h1>
+            <article>
+              {{content}}
+            </article>
+          </div>
+          <div class="col-md-6">
+            <div class="row" style="margin-bottom:15px;">
+              <div class="col-xs-9">
+                <select id="app-template" class="form-control">
+                  <option>เลือกแม่แบบโค้ด</option>
+                  <option value="helloworld.irin">สวัสดีชาวโลก</option>
+                  <option value="comment.irin">ความคิดเห็น</option>
+                  <option value="random-answer.irin">คำถามหลายคำตอบ</option>
+                  <option value="continuous-conversation.irin">ความต่อเนื่อง</option>
+                  <option value="topdown.irin">บนลงล่าง</option>
+                  <option value="expression.irin">นิพจน์</option>
+                  <option value="header.irin">ส่วนหัว</option>
+                  <option value="variable-access.irin">การเข้าถึงตัวแปร</option>
+                  <option value="variable-update.irin">การเปลี่ยนค่าตัวแปร</option>
+                  <option value="topic.irin">หัวข้อเรื่อง</option>
+                  <option value="inline-condition.irin">เงื่อนไขในบรรทัด</option>
+                  <option value="eliza.irin">ตัวอย่าง : Eliza</option>
+                </select>
+              </div>
+              <div class="col-xs-3" style="padding-left:0px;">
+                <a id="app-excute" class="btn btn-primary" style="border-radius: 4px;width:100%;padding: 6px 12px;">ทำงาน</a>
+              </div>
+            </div>
+<textarea class="form-control" cols="80" rows="20" id="app-code">
+สวัสดี
+  มีอะไรให้ช่วยหรอคะ
+</textarea>
+          </div>
+      </div>
+    </div>
+    <div class="modal fade" id="app-chat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">คุยกับโค้ดของคุณ</h4>
+          </div>
+          <div class="modal-body">
+            <div id="app-console" style="height:200px;">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-xs-10">
+                <input id="app-input" type="text" class="form-control" placeholder="ข้อความ..." />
+              </div>
+              <div class="col-xs-2" style="padding-left:0px;">
+                <button id="app-send" type="button" class="btn btn-primary" style="border-radius: 4px;width:100%;">ส่ง</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
+    {%include js-loader.html%}
+    <script src="/js/irin-lang.min.js"></script>
+    <script src="/js/app-try.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,25 @@
+.markdown-render{
+  h1,h2,h3,h4{
+    font-family: bangna-new;
+    font-weight: bold;
+  }
+  h1{
+    font-size: 4rem;
+    border-bottom-color:rgb(238, 238, 238);
+    border-bottom-style: solid;
+    border-bottom-width:1px;
+    padding-bottom: 0.5rem;
+  }
+  h2{
+    line-height: 4rem;
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  p{
+    margin-bottom: 1rem!important;
+    margin-top: 1rem!important;
+    font-size: 1.6rem;
+    line-height: 3rem;
+  }
+}

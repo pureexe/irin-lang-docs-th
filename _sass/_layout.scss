@@ -1,0 +1,62 @@
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+.page-content{
+  margin-top:$navbar-height;
+}
+.landing-header{
+  background-color: #55BB94;
+  color:#fff;
+  padding-top:5rem;
+  padding-bottom:5rem;
+  h1{
+    font-family: bangna-new;
+    font-size:4.8rem;
+  }
+  p{
+    text-align: center;
+    color: rgba(255,255,255,.8);
+  }
+}
+.landing-avaliable{
+  background-color:#F5F5F5;
+  padding-top:5rem;
+  padding-bottom:5rem;
+  .banner-node{
+    margin-top: -2rem;
+    margin-left: 1rem;
+    height: 60px;
+    @media screen and (max-width: $screen-xs-max) {
+      margin-top:0rem;
+      margin-bottom: 3rem;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
+  .banner-browser{
+    margin-right: 1rem;
+    height: 60px;
+    @media screen and (max-width: $screen-xs-max) {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
+}
+.landing-behide-scence{
+  padding-top:5rem;
+  padding-bottom:5rem;
+  h2{
+    font-size: 3rem;
+    font-family: bangna-new;
+  }
+  .explain{
+    color: #444;
+    font-size:1.8rem;
+    line-height: 3rem;
+  }
+}

@@ -1,0 +1,17 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Jekyll variables
+$spacing-unit:     30px;
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "bootstrap",
+        "base",
+        "layout",
+        "markdown-render",
+        "app-try",
+        "syntax-highlighting"
+;

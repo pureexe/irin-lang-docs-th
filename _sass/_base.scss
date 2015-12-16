@@ -1,0 +1,18 @@
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+@font-face {
+    font-family: 'bangna-new';
+    src: url('/fonts/bangna-new-webfont.eot');
+    src: url('/fonts/tbangna-new-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/bangna-new-webfont.woff2') format('woff2'),
+         url('/fonts/bangna-new-webfont.woff') format('woff'),
+         url('/fonts/bangna-new-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

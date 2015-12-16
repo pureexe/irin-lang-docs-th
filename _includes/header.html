@@ -1,0 +1,33 @@
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{{ "/" | prepend: site.baseurl }}" style="padding-top: 22px;padding-bottom: 10px;padding-left: 10px;padding-right: 10px;">
+          <img style="display:inline-block;margin-top:-12px;" src="{{"/images/icon-60px.png" | prepend: site.baseurl }}"/>
+          <div style="display:inline-block;">
+            <span style="font-family:bangna-new;margin-left:0.5rem;font-size:3rem;">
+              ภาษาไอริน
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          {% comment %}
+          <li><a href="{% if page.lang_english %}{{page.lang_eng | prepend: site.lang_eng_baseurl | prepend: site.lang_eng_baseurl}}{%else%}{{site.lang_eng_url}}{%endif%}">English</a></li>
+          {% endcomment %}
+          <li><a href="{{ "/ลองใช้" | prepend: site.baseurl }}">ลองใช้</a></li>
+          <li><a href="{{ "/ดาวน์โหลด" | prepend: site.baseurl }}">ดาวน์โหลด</a></li>
+          <li><a href="{{ "/เอกสาร/เริ่มต้น" | prepend: site.baseurl }}">เอกสาร</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
