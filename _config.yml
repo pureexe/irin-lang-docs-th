@@ -10,7 +10,7 @@ title: ภาษาไอริน
 email: dev@irin.in.th
 description: "การเยื้องเพื่อการรู้จำภาษาธรรมชาติอย่างชาญฉลาด (Indent to Recognize for Intelligent Natural language : IRIN) หรือเรียกอีกชื่อว่า ภาษาไอริน โดยใช้การเยื้องของโค้ดให้เป็นประโยชน์ในบอกรูปแบบของประโยคคำถามและคำตอบในการสร้างระบบสนทนาโต้ตอบอัตโนมัติซึ่งจะทำให้โค้ดอ่านง่ายและสั้นลงอย่างมากซึ่งเป็นมิตรต่อผู้ที่กำลังศึกษาการสร้างระบบสนทนาโต้ตอบอัตโนมัติและยังทำให้สามารถพัฒนาระบบได้อย่างรวดเร็วอีกทั้งยังรองรับการใช้งานทั้งภาษาไทยและภาษาอังกฤษ"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ภาษา.ไอริน.ไทย" # the base hostname & protocol for your site
+url: "https://xn--x3cs0ab.xn--q3ct3a3a7e.xn--o3cw4h" # the base hostname & protocol for your site
 lang_eng_baseurl: "/"
 lang_eng_url: "https://lang.irin.in.th"
 permalink: /:year/:month/:title.html
