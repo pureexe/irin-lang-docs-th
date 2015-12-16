@@ -25,5 +25,6 @@ binary:
   link: https://github.com/pureexe/irin-lang/releases
 # Build settings
 markdown: kramdown
+post_dirs: false
 gems:
   - jekyll-redirect-from
