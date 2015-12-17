@@ -5,7 +5,7 @@
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 340 }}{% elsif page.content %}{{ page.content | strip_html | strip_newlines | truncate: 340 }}{% else %}{{ site.description }}{% endif %}" />
 <meta property="og:url" content="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}" />
-<meta property="og:site_name" content="ภาษา.ไอริน.ไทย" />
+<meta property="og:site_name" content="IRIN LANGUAGAGE" />
 {% if page.excerpt != null %}
 <meta property="og:type" content="article" />
 <meta property="article:publisher" content="https://www.facebook.com/pureexe" />
@@ -28,5 +28,5 @@
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 340 }}{% elsif page.content %}{{ page.content | strip_html | strip_newlines | truncate: 340 }}{% else %}{{ site.description }}{% endif %}"/>
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
-<meta name="twitter:domain" content="ภาษา.ไอริน.ไทย"/>
+<meta name="twitter:domain" content="IRIN LANGUAGAGE"/>
 <meta name="twitter:image" content="{% if page.thumbnail %}{% if selfHostThumbnail == 1 and jekyll.environment == 'production' %}{{ page.thumbnail | prepend: site.baseurl | prepend: site.url}}{% else %}{{page.thumbnail}}{% endif %}{% else %}{{"/images/icon-200px.png" | prepend: site.baseurl | prepend: site.url }}{% endif %}"/>
