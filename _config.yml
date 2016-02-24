@@ -21,9 +21,9 @@ social:
   twitter: "@PakkaponPH"
 encoding: utf-8
 binary:
-  version: 0.0.4
+  version: 0.0.6
   link: https://github.com/pureexe/irin-lang/releases
-# Build settings
+# Build settings##
 markdown: kramdown
 post_dirs: false
 gems:
